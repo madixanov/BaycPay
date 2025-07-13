@@ -1,0 +1,64 @@
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.description-1 {
+    width: 371px;
+    font-size: 1.7rem; 
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(90deg, #fff, #a2a2a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    white-space: pre-line;
+}
+
+.description-1 span {
+    background: linear-gradient(90deg, #0049FF, #00C3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.description-2 {
+    width: 365px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.scroll-text-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(140deg, #0049FF, #00C3FF);
+    padding: 1rem 0;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.scroll-track {
+    display: flex;
+    white-space: nowrap;
+}
+
+.scroll-content {
+    display: flex;
+    gap: 4rem;
+    padding-left: 100%;
+}
+
+.scroll-content span {
+    white-space: nowrap;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+}
