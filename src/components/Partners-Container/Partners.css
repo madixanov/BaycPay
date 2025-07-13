@@ -1,0 +1,64 @@
+.partners-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-container h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.partners-container h1 span {
+    background: linear-gradient(90deg,#0049FF, #00C3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.partners {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+    width: 363px;
+    height: 214px;
+    border: 1px solid rgba(255,255,255,0.24);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.05); /* полупрозрачный фон */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* для Safari */
+}
+
+.container p {
+    font-size: 27px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #FFFFFF, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
