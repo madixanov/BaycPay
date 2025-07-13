@@ -1,0 +1,106 @@
+.welcoming-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    width: 100%; /* 🔹 ширина на всю доступную область */
+    height: 600px; /* 🔹 фиксированная высота */
+
+    background-image: 
+        url('assets/setka.svg'),
+        url('assets/gradient-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover; /* 🔹 картинка масштабируется */
+    background-position: center; /* 🔹 центрируется */
+    padding-top: 110px;
+}
+
+.welcoming-title {
+  font-size: 106px;
+  font-weight: 400;
+  margin: 0;
+
+  background: linear-gradient(90deg, #3E99D1, #FFFFFF, #2581D2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Для поддержки Firefox */
+  background-clip: text;
+  color: transparent;
+  transform: translateX(2px);
+}
+
+.welcoming-title span {
+    font-size: 6rem;
+    font-weight: 600;
+    background: linear-gradient(140deg, #0049FF, #00C3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-div p {
+    width: 200px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 20px;
+    transform: translateX(-70px);
+}
+
+.hero-div img{
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    top: 203px;
+    left: 50%;
+    transform: translateX(-65%);
+}
+
+.hero-div div {
+    width: 320px;
+    height: 53px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* 🔹 полупрозрачный фон */
+    backdrop-filter: blur(10px);                /* 🔹 размытие фона */
+    -webkit-backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100px);
+}
+
+.hero-div div span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: linear-gradient(90deg, #fff, #7fc4f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.welcoming-contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 732px;
+    height: 138px;
+    position: absolute;
+    top: 560px;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 20px;
+}

@@ -9,5 +9,5 @@ body {
   background-color: #080A28;
   color: white;
   height: 100%;
-  padding-top: 100px;
+  overflow-x: hidden;
 }
