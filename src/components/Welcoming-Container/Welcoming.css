@@ -93,6 +93,7 @@
 
 .welcoming-contact-us-container {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -106,6 +107,15 @@
     background-color: rgba(255, 255, 255, 0.1); /* 🔹 полупрозрачный фон */
     backdrop-filter: blur(10px);                /* 🔹 размытие фона */
     -webkit-backdrop-filter: blur(10px); 
+}
+
+.welcoming-contact-us-container::before {
+    content: "";
+    position: absolute;
+    height: 84px;
+    width: 3px;
+    background: linear-gradient(180deg, #0049FF, #00C3FF);
+    left: -2px;
 }
 
 .welcoming-contact-us-text {

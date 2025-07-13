@@ -1,0 +1,90 @@
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/gradient-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover; /* 🔹 картинка масштабируется */
+    background-position: center;
+    height: 910px;
+}
+
+.statistics-container h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats-container {
+    position: relative;
+    width: 363px;
+    height: 178px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.05); /* полупрозрачный фон */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* для Safari */
+}
+
+.stats-container::before {
+    position: absolute;
+    content: "";
+    width: 164px;
+    height: 3px;
+    top: -1px;
+    background: linear-gradient(90deg, #0049FF, #00C3FF);
+}
+
+.stats-number {
+    font-size: 4rem;
+    font-weight: 400;
+    background: linear-gradient(140deg, #0049FF, #00C3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin: 0;
+}
+
+.stast-text {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+@media (max-width: 1024px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats > .stats-container:nth-child(4) {
+        grid-column-start: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
