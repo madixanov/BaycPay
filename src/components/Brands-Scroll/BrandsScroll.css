@@ -1,0 +1,31 @@
+.brands-scroll-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.brands-track {
+  display: flex;
+  width: fit-content;
+}
+
+.brand-logo {
+  min-width: 15%; /* 100% / 4 = 25% — 4 логотипа на экране */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.brand-logo img {
+  height: 40px;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}

@@ -9,6 +9,19 @@
     justify-content: center;
     padding: 1rem 2rem;
     gap: 32rem;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.header.transparent {
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header-logo-container {

@@ -101,6 +101,62 @@
     position: absolute;
     top: 560px;
     z-index: 2;
-    border: 1px solid rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* 🔹 полупрозрачный фон */
+    backdrop-filter: blur(10px);                /* 🔹 размытие фона */
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.welcoming-contact-us-text {
+    width: 400px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.welcoming-contact-us-text span {
+    color: white;
+}
+
+.welcoming-contact-us-cont1 {
+    padding: 9px;
+    border: 1px solid rgba(0, 72, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.welcoming-contact-us-cont1:hover {
+    border: 1px solid rgba(0, 72, 255, 0);
+}
+
+.welcoming-contact-us-cont2 {
+    padding: 9px;
+    border: 1px solid rgba(0, 72, 255, 0.25);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.welcoming-contact-us-cont2:hover {
+    border: 1px solid rgba(0, 72, 255, 0);
+}
+
+.welcoming-contact-us-btn {
+  width: 232px;
+  height: 72px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(140deg, #0049FF, #00C3FF);
+  background-size: 200%;
+  background-position: left;
+  transition: all 0.4s ease-in-out;
+}
+
+.welcoming-contact-us-btn:hover {
+  background-position: right;
+  cursor: pointer;
+  transform: scale(1.02);
 }
