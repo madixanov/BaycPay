@@ -1,0 +1,210 @@
+.footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-color: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 16px 0 16px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 152px;
+    width: 100%;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-container img {
+    height: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-links p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin-top: 0;
+}
+
+.footer-links p:hover {
+    color: white;
+}
+
+.footer-button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-contact-us-button {
+  position: relative;
+  padding: 0;
+  border: none;
+  background: linear-gradient(90deg, #0049FF, #00C3FF); /* рамка */
+  border-radius: 12px;
+  cursor: pointer;
+  width: 10rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.footer-contact-us-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  background-color: black; /* внутренний чёрный фон */
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 10px; /* меньше, чем внешний */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-contact-us-button span:hover {
+    background-color: transparent;
+}
+
+.footer-tg-button,
+.footer-fb-button {
+    position: relative;
+    padding: 0;
+    border: none;
+    background: linear-gradient(90deg, #0049FF, #00C3FF);
+    border-radius: 12px;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-tg-button span,
+.footer-fb-button span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    background-color: black; /* или transparent — как хочешь */
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer-tg-button span img {
+    width: 0.8rem;
+}
+
+.footer-fb-button span img {
+    width: 0.4rem;
+}
+
+.footer-tg-button:hover span,
+.footer-fb-button:hover span {
+    background-color: transparent;
+}
+
+.rules-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: center;
+    border-top: 1px solid #19191D;
+    width: 100%;
+    max-width: 1200px;
+    padding: 24px 16px;
+    gap: 2rem;
+}
+
+.rules-footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    margin: 0;
+}
+
+.rules-footer p:hover {
+    color: white;
+}
+
+/* 🌐 Адаптация под планшеты и телефоны */
+@media (max-width: 1024px) {
+    .footer-logo-container img {
+        opacity: 0;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .rules-footer {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        gap: 32px;
+        padding-top: 16px;
+    }
+
+    .footer-contact-us-button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .footer-tg-button,
+    .footer-fb-button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .rules-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
