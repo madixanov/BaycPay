@@ -6,6 +6,7 @@ const BrandsScroll = lazy(() => import("../../components/Brands-Scroll/BrandsScr
 const Description = lazy(() => import("../../components/Description-Container/Description.jsx"));
 const Statistics = lazy(() => import("../../components/Statistics-Container/Statistics.jsx"));
 const Partners = lazy(() => import("../../components/Partners-Container/Partners.jsx"));
+const Advantages = lazy(() => import("../../components/Advantages-Container/Advantages.jsx"))
 
 const HomeMain = () => {
   return (
@@ -15,6 +16,7 @@ const HomeMain = () => {
       <Description />
       <Statistics />
       <Partners />
+      <Advantages />
     </main>
   );
 }
