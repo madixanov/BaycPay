@@ -1,0 +1,13 @@
+<svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.29688 1V5.29545" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.0278 1V5.29545" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.7588 1V5.29545" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.4897 1V5.29545" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="6.29658" cy="12.2458" rx="1.27119" ry="1.27118" fill="#0075FF"/>
+<path d="M12.0278 12.2456H23.4898" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="6.29658" cy="17.8835" rx="1.27119" ry="1.27118" fill="#0075FF"/>
+<path d="M12.0278 17.8838H23.4898" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="6.29658" cy="23.5222" rx="1.27119" ry="1.27118" fill="#0075FF"/>
+<path d="M12.0278 23.5215H23.4898" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.7858 20.7254V6.84452C28.7858 4.71427 27.0589 2.9873 24.9286 2.9873H4.85723C2.72697 2.9873 1 4.71421 1 6.84452V27.1429C1 29.2732 2.72691 31.0002 4.85723 31.0002H24.9286C27.0588 31.0002 28.7858 29.2733 28.7858 27.1429V27.0813" stroke="#0075FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

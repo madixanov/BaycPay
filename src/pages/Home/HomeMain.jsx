@@ -7,7 +7,8 @@ const Description = lazy(() => import("../../components/Description-Container/De
 const Statistics = lazy(() => import("../../components/Statistics-Container/Statistics.jsx"));
 const Partners = lazy(() => import("../../components/Partners-Container/Partners.jsx"));
 const Advantages = lazy(() => import("../../components/Advantages-Container/Advantages.jsx"));
-const Countries = lazy(() => import("../../components/Countries-Scroll/Countries.jsx"))
+const Countries = lazy(() => import("../../components/Countries-Scroll/Countries.jsx"));
+const Offer = lazy(() => import("../../components/Offer-Container/Offer.jsx"))
 
 const HomeMain = () => {
   return (
@@ -19,6 +20,7 @@ const HomeMain = () => {
       <Partners />
       <Advantages />
       <Countries />
+      <Offer />
     </main>
   );
 }
