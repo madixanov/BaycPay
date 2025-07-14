@@ -7,8 +7,10 @@ import russia from "../../assets/flags/russia.svg";
 import sweden from "../../assets/flags/sweden.svg";
 import turkey from "../../assets/flags/turkey.svg";
 import uae from "../../assets/flags/uae.svg";
-import urugay from "../../assets/flags/urugay.svg";
+import uruguay from "../../assets/flags/urugay.svg"; // Исправлено
+
 import "./Countries.css";
+import { motion } from "framer-motion";
 
 const flags = [
   china,
@@ -20,7 +22,7 @@ const flags = [
   sweden,
   turkey,
   uae,
-  urugay,
+  uruguay,
 ];
 
 const countryNames = [
@@ -38,29 +40,46 @@ const Countries = () => {
       <div className="countries-text">
         <h1>Мы объединяем мир</h1>
         <p>
-          Наша цель — упростить глобальные онлайн-платежи, где бы вы ни находились.<br />
+          Наша цель — упростить глобальные онлайн-платежи, где бы вы ни находились.
+          <br />
           От США и Европы до Азии и Южной Америки. Мы работаем там, где другим сложно.
         </p>
       </div>
 
       <div className="marquee-wrapper">
-        <div className="marquee-track">
+        <motion.div
+          className="marquee-track"
+          animate={{ x: ["0%", "-100%"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+            ease: "linear",
+          }}
+        >
           {[...flags, ...flags].map((flag, index) => (
             <div className="marquee-item" key={index}>
               <img src={flag} alt={`flag-${index}`} className="flag" />
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       <div className="marquee-wrapper">
-        <div className="marquee-track reverse">
+        <motion.div
+          className="marquee-track reverse"
+          animate={{ x: ["0%", "100%"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+            ease: "linear",
+          }}
+        >
           {[...countryNames, ...countryNames].map((name, index) => (
             <div className="marquee-country" key={index}>
               {name}
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
