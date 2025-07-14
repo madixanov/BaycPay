@@ -4,11 +4,16 @@
     gap: 50px;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/gradient-image.svg');
+    background-image: 
+        linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
+        url('assets/gradient-image.svg');
     background-repeat: no-repeat;
     background-size: cover; /* 🔹 картинка масштабируется */
     background-position: center;
     height: 910px;
+    box-shadow: inset 0 50px 100px #080A28;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .statistics-container h1 {

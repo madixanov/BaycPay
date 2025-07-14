@@ -10,6 +10,7 @@ const Advantages = lazy(() => import("../../components/Advantages-Container/Adva
 const Countries = lazy(() => import("../../components/Countries-Scroll/Countries.jsx"));
 const Offer = lazy(() => import("../../components/Offer-Container/Offer.jsx"));
 const ContactUs = lazy(() => import("../../components/ContactUs-Container/ContactUs.jsx"))
+const Telegram = lazy(() => import("../../components/TelegramBot-Container/Telegram.jsx"))
 
 const HomeMain = () => {
   return (
@@ -23,6 +24,7 @@ const HomeMain = () => {
       <Countries />
       <Offer />
       <ContactUs />
+      <Telegram />
     </main>
   );
 }
