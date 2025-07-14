@@ -54,7 +54,7 @@ const Countries = () => {
             repeat: Infinity,
             repeatType: "loop",
             ease: "linear",
-            duration: 30,
+            duration: 15,
           }}
         >
           {[...flags, ...flags].map((flag, index) => (
@@ -74,7 +74,7 @@ const Countries = () => {
             repeat: Infinity,
             repeatType: "loop",
             ease: "linear",
-            duration: 30,
+            duration: 15,
           }}
         >
           {[...countryNames, ...countryNames].map((name, index) => (

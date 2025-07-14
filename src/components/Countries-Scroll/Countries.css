@@ -43,14 +43,14 @@
 }
 
 .marquee-item img {
-  height: 50px;
+  height: 75px;
   width: auto;
   object-fit: contain;
 }
 
 .marquee-country {
   font-size: 37px;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0 2rem;
   white-space: nowrap;
   flex-shrink: 0;

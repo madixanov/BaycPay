@@ -5,6 +5,7 @@
     align-items: center;
     gap: 4rem;
     margin-bottom: 100px;
+    width: 1200px;
 }
 
 .offer-container h1 {
@@ -58,6 +59,7 @@
 .upper-sub-container {
     display: flex;
     gap: 36px;
+    width: 761px;
 }
 
 .upper-container {
@@ -90,7 +92,7 @@
     border: 1px solid rgba(255,255,255,0.1);
     border-radius: 20px;
     padding: 24px;
-    width: 810px;
+    width: 716px;
     border: 1px solid rgba(0, 153, 255, 0.2);
     backdrop-filter: blur(10px); /* само размытие */
     background-color: rgba(255, 255, 255, 0.05);
@@ -129,7 +131,7 @@
 
 .columns-row {
   display: flex;
-  justify-content: space-evenly; /* или space-evenly */ 
+  justify-content: space-between; /* или space-evenly */ 
   margin-top: 11px;
 }
 
@@ -137,12 +139,12 @@
   padding-left: 17px;
   margin: 0;
   height: 92px;
-  width: 210px;
 }
 
 .columns-row li {
   font-size: 0.8rem;
   color: #7891A1;
+  width: 100%;
 }
 
 .columns-row li::marker {
