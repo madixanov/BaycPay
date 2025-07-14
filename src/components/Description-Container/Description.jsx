@@ -4,22 +4,17 @@ import "./Description.css";
 
 const phrases = [
     "• Позвольте нам стать частью вашего финансового успеха",
-    "• Мы обеспечим безопасность ваших транзакций",
-    "• Новые финансовые возможности для вашего бизнеса",
-    "• Экспертный подход и надёжная защита",
-    "• Быстрые и безопасные платежные решения",
-    "• BAYC-PAY — ваш финансовый щит",
 ];
 
 const Description = () => {
     return (
-        <div>
+        <div className="description-page">
             <div className="description-container">
                 <p className="description-1">
                     <span>BAYC-PAY</span> — это надёжный партнёр для компаний и частных клиентов, ищущих быстрые способы приёма и отправки платежей по всему миру.
                 </p>
 
-                <img src={hero} alt="hero" />
+                <img src={hero} alt="hero" className="description-image"/>
 
                 <p className="description-2">
                     Обеспечивая уверенность и безопасность на каждом этапе вашего финансового пути<br /><br />

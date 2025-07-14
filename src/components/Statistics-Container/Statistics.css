@@ -1,95 +1,133 @@
 .statistics-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    background-image: 
-        linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
-        url('assets/gradient-image.svg');
-    background-repeat: no-repeat;
-    background-size: cover; /* 🔹 картинка масштабируется */
-    background-position: center;
-    height: 910px;
-    box-shadow: inset 0 50px 100px #080A28;
-    margin-top: 50px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  background-image: 
+      linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
+      url('assets/gradient-image.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 2rem;
+  box-shadow: inset 0 50px 100px #080A28;
+  width: 100%;
 }
 
 .statistics-container h1 {
-    font-weight: 400;
-    font-size: 4rem;
-    background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-weight: 400;
+  font-size: 4rem;
+  text-align: center;
+  background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
 }
 
 .stats {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
 }
 
 .stats-container {
-    position: relative;
-    width: 363px;
-    height: 178px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: 178px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
 
-    background-color: rgba(255, 255, 255, 0.05); /* полупрозрачный фон */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* для Safari */
+.stats-container:hover {
+  transform: scale(1.02);
 }
 
 .stats-container::before {
-    position: absolute;
-    content: "";
-    width: 164px;
-    height: 3px;
-    top: -1px;
-    background: linear-gradient(90deg, #0049FF, #00C3FF);
+  position: absolute;
+  content: "";
+  width: 164px;
+  height: 3px;
+  top: -1px;
+  background: linear-gradient(90deg, #0049FF, #00C3FF);
 }
 
 .stats-number {
-    font-size: 4rem;
-    font-weight: 400;
-    background: linear-gradient(140deg, #0049FF, #00C3FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    margin: 0;
+  font-size: 4rem;
+  font-weight: 400;
+  background: linear-gradient(140deg, #0049FF, #00C3FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin: 0;
 }
 
 .stast-text {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
 }
 
-
+/* ------- АДАПТАЦИЯ ------- */
 @media (max-width: 1024px) {
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .statistics-container h1 {
+    font-size: 3.5rem;
+  }
 
-    .stats > .stats-container:nth-child(4) {
-        grid-column-start: auto;
-    }
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 640px) {
-    .stats {
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 768px) {
+  .statistics-container {
+    padding: 80px 1.5rem;
+    gap: 40px;
+  }
+
+  .statistics-container h1 {
+    font-size: 2.8rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .stats-number {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics-container {
+    padding: 60px 1rem;
+  }
+
+  .statistics-container h1 {
+    font-size: 2rem;
+  }
+
+  .stats-number {
+    font-size: 2.2rem;
+  }
+
+  .stast-text {
+    font-size: 0.95rem;
+  }
 }

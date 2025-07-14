@@ -1,161 +1,249 @@
 .offer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    margin-bottom: 100px;
-    width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 0 auto 100px auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .offer-container h1 {
-    font-weight: 400;
-    font-size: 5rem;
-    background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    margin: 0;
+  font-weight: 400;
+  font-size: 5rem;
+  background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  text-align: center;
 }
 
 .container-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    gap: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .left-main-container {
-    width: 363px;
-    height: 511px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 24px;
-    border-radius: 20px;
-    gap: 35px;
-    border: 1px solid rgba(0, 153, 255, 0.2);
-    backdrop-filter: blur(10px); /* само размытие */
-    background-color: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 35px;
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 .left-main-container:hover {
-    scale: 1.02;
+  transform: scale(1.02);
 }
 
 .right-main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 100%;
 }
 
 .upper-sub-container {
-    display: flex;
-    gap: 36px;
-    width: 761px;
+  display: flex;
+  gap: 36px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.upper-container,
+.down-sub-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 24px;
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 .upper-container {
-    width: 363px;
-    height: 215px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    padding: 24px;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 20px;
-    border: 1px solid rgba(0, 153, 255, 0.2);
-    backdrop-filter: blur(10px); /* само размытие */
-    background-color: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
 }
 
-.upper-container:hover {
-    scale: 1.02;
+.upper-container:hover,
+.down-sub-container:hover {
+  transform: scale(1.02);
 }
 
 .down-sub-container {
-    width: 100%;
-    height: 215px;
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-    align-items: start;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 20px;
-    padding: 24px;
-    width: 716px;
-    border: 1px solid rgba(0, 153, 255, 0.2);
-    backdrop-filter: blur(10px); /* само размытие */
-    background-color: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease-in-out;
-}
-
-.down-sub-container:hover {
-    scale: 1.02;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: flex-start;
 }
 
 .container-text {
-    width: 315px;
+  width: 315px;
 }
 
 .container-text-1 {
-    width: 100%;
-    margin-top: 27px;
+  width: 100%;
+  margin-top: 27px;
 }
- h3 {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: 400;
-    background: linear-gradient(90deg, #fff, #999999);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+
+h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #fff, #999999);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .container-text p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #7891A1;
-    margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7891A1;
+  margin: 0;
 }
 
 .columns-row {
   display: flex;
-  justify-content: space-between; /* или space-evenly */ 
-  margin-top: 11px;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .columns-row ul {
-  padding-left: 17px;
+  flex: 1 1 22%;
+  min-width: 120px;
+  max-width: 45%;
   margin: 0;
-  height: 92px;
+  padding-left: 17px;
+  word-break: break-word;
+  box-sizing: border-box;
 }
 
 .columns-row li {
   font-size: 0.8rem;
   color: #7891A1;
-  width: 100%;
 }
 
 .columns-row li::marker {
-
-    color: #0075FF;
+  color: #0075FF;
 }
 
 .logo {
-    height: 30px;
+  height: 30px;
 }
 
 .container-text.invest {
-    justify-content: center;
+  justify-content: center;
+}
+
+/* ───── Планшеты (до 1200px) ───── */
+@media (max-width: 1200px) {
+  .offer-container h1 {
+    font-size: 4rem;
+  }
+
+  .container-grid {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .left-main-container {
+    max-width: 100%;
+  }
+
+  .upper-sub-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .upper-container,
+  .down-sub-container {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .columns-row ul {
+    max-width: 100%;
+    flex: 1 1 45%;
+  }
+
+  .container-text {
+    width: 100%;
+  }
+}
+
+/* ───── Мобильные (до 768px) ───── */
+@media (max-width: 768px) {
+  .offer-container h1 {
+    font-size: 3rem;
+  }
+
+  .down-sub-container {
+    padding: 16px;
+  }
+
+  .columns-row {
+    gap: 1rem;
+  }
+
+  .columns-row ul {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ───── Маленькие телефоны (до 480px) ───── */
+@media (max-width: 480px) {
+  .offer-container h1 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .container-text p {
+    font-size: 0.95rem;
+  }
+
+  .columns-row {
+    flex-direction: column;
+  }
+
+  .columns-row ul {
+    width: 100%;
+    flex: 1 1 auto;
+  }
 }

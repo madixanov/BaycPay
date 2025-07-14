@@ -1,64 +1,157 @@
-.description-container {
+.description-page {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 13px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .description-1 {
-    width: 371px;
-    font-size: 1.7rem; 
-    font-weight: 700;
-    margin: 0;
-    background: linear-gradient(90deg, #fff, #a2a2a2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    white-space: pre-line;
+  width: 100%;
+  max-width: 371px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #fff, #a2a2a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  white-space: pre-line;
 }
 
 .description-1 span {
-    background: linear-gradient(90deg, #0049FF, #00C3FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(90deg, #0049FF, #00C3FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .description-2 {
-    width: 365px;
-    font-weight: 400;
-    font-size: 1rem;
+  width: 100%;
+  max-width: 365px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ccc;
 }
 
+.description-image {
+  max-width: 385px;
+  width: 100%;
+  height: auto;
+}
+
+/* Бегущая строка */
 .scroll-text-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background: linear-gradient(140deg, #0049FF, #00C3FF);
-    padding: 1rem 0;
-    margin-top: 75px;
+  overflow: hidden;
+  width: 100%; /* 👉 на всю ширину экрана */
+  background: linear-gradient(140deg, #0049FF, #00C3FF);
+  padding: 1rem 0;
+  margin-top: 75px;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
 .scroll-track {
-    display: flex;
-    white-space: nowrap;
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .scroll-content {
-    display: flex;
-    gap: 4rem;
-    padding-left: 100%;
+  display: flex;
+  gap: 4rem;
+  min-width: 100%;
+  animation: scroll-left 20s linear infinite;
+  box-sizing: border-box;
+  padding-left: 100%; /* бесшовная прокрутка */
 }
 
 .scroll-content span {
-    white-space: nowrap;
-    font-size: 1rem;
-    color: white;
-    font-weight: 500;
+  white-space: nowrap;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 📱 Планшеты и телефоны */
+@media (max-width: 768px) {
+  .description-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .description-1,
+  .description-2 {
+    max-width: 90%;
+  }
+
+  .description-1 {
+    font-size: 1.4rem;
+  }
+
+  .description-image {
+    width: 200px;
+  }
+
+  .scroll-text-wrapper {
+    padding: 0.75rem 0;
+    margin-top: 50px;
+  }
+
+  .scroll-content {
+    gap: 2rem;
+    animation-duration: 25s;
+  }
+
+  .scroll-content span {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .description-1 {
+    font-size: 1.1rem;
+  }
+
+  .description-2 {
+    font-size: 0.85rem;
+  }
+
+  .scroll-text-wrapper {
+    padding: 0.5rem 0;
+    margin-top: 40px;
+  }
+
+  .scroll-content {
+    gap: 1.5rem;
+    animation-duration: 28s;
+  }
+
+  .scroll-content span {
+    font-size: 0.85rem;
+  }
 }

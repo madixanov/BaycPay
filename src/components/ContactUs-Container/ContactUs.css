@@ -1,51 +1,54 @@
 .contact-us-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 1200px;
-    height: 450px;
-    background: linear-gradient(230deg, #0049FF, #00C3FF);
-    border: none;
-    border-radius: 30px;
-    margin-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1200px;
+  max-width: 100%;
+  height: 450px;
+  background: linear-gradient(230deg, #0049FF, #00C3FF);
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 75px;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .contact-us-container h1 {
-    font-size: 5rem;
-    font-weight: 400;
-    margin: 0;
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 .contact-us-container p {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
-    margin-top: 27px;
-    margin-bottom: 31px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 31px;
 }
 
 .fields-row {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
 }
 
 .fields-row input {
-    height: 72px;
-    width: 232px;
-    color: white;
-    background-color: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.3);
-    padding-left: 26px;
-    border-radius: 10px;
+  height: 72px;
+  width: 232px;
+  color: white;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding-left: 26px;
+  border-radius: 10px;
 }
 
 .fields-row input::placeholder {
-    color: white;
+  color: white;
 }
 
 .fields-row input:focus {
@@ -53,24 +56,24 @@
 }
 
 .contact-btn {
-    padding-top: 26px;
-    padding-left: 51px;
-    padding-right: 51px;
-    padding-bottom: 26px;
-    border: none;
-    border-radius: 10px;
-    color: #0075FF;
-    font-size: 1rem;
-    font-weight: 700;
+  padding-top: 26px;
+  padding-left: 51px;
+  padding-right: 51px;
+  padding-bottom: 26px;
+  border: none;
+  border-radius: 10px;
+  color: #0075FF;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .rules {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-    align-self: flex-start;
-    margin-left: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  margin-left: 70px;
 }
 
 .rules input[type="checkbox"] {
@@ -100,10 +103,102 @@
 }
 
 .rules p {
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .rules a {
-    color: white;
+  color: white;
+}
+
+
+/* ───── Планшеты и ниже (до 1200px) ───── */
+@media (max-width: 1200px) {
+  .contact-us-container {
+    width: 90%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .contact-us-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .fields-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fields-row input {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* ───── Мобильные (до 768px) ───── */
+@media (max-width: 768px) {
+  .contact-us-container {
+    height: auto;
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .contact-us-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-us-container p {
+    font-size: 0.95rem;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+
+  .fields-row {
+    gap: 16px;
+  }
+
+  .rules {
+    flex-direction: row;
+    margin-left: 0;
+    text-align: left;
+    align-self: stretch;
+  }
+
+  .rules p {
+    font-size: 11px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 18px 0;
+  }
+}
+
+
+/* ───── Маленькие телефоны (до 480px) ───── */
+@media (max-width: 480px) {
+  .contact-us-container h1 {
+    font-size: 2rem;
+  }
+
+  .fields-row input {
+    height: 60px;
+    font-size: 1rem;
+  }
+
+  .rules input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rules input[type="checkbox"]:checked::after {
+    font-size: 12px;
+    left: 3px;
+    top: 1px;
+  }
+
+  .contact-btn {
+    font-size: 0.95rem;
+  }
 }

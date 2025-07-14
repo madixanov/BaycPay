@@ -1,45 +1,82 @@
 .countries-container {
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-image: 
-     linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
-     url("assets/gradient-image.svg");
+  background:
+    linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
+    url("assets/gradient-image.svg");
   background-repeat: no-repeat;
-  height: 623px;
-  background-position: center;
-  border: none;
-  padding-top: 48px;
+  background-position: center top;
+  background-size: cover;
+  min-height: 623px;
   box-shadow: inset 0 50px 100px #080A28;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .countries-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 91px;
+  margin: 0 auto 91px auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-.marquee-wrapper {
-  overflow: hidden;
+.countries-text h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 400;
+  background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   width: 100%;
-  white-space: nowrap;
+  text-align: center;
+  word-break: break-word;
 }
 
+.countries-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #C5D0DA;
+  line-height: 1.6rem;
+}
+
+/* Обертка для анимации */
+.marquee-wrapper {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Лента флагов и стран */
 .marquee-track {
   display: flex;
-  width: max-content;
   gap: 2rem;
+  will-change: transform;
+  min-width: 200%;
 }
 
 .marquee-track.reverse {
   flex-direction: row-reverse;
 }
 
+/* Флаг */
 .marquee-item {
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .marquee-item img {
@@ -48,39 +85,89 @@
   object-fit: contain;
 }
 
+.flag {
+  width: 113px;
+}
+
+/* Название страны */
 .marquee-country {
   font-size: 37px;
   font-weight: 400;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   white-space: nowrap;
   flex-shrink: 0;
+  color: #ffffff;
 }
 
-.countries-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* ─────────────── Адаптив ─────────────── */
+
+/* Планшеты */
+@media (max-width: 1200px) {
+  .countries-text h1 {
+    font-size: 4rem;
+  }
+
+  .marquee-item img {
+    height: 65px;
+  }
+
+  .marquee-country {
+    font-size: 30px;
+  }
 }
 
-.countries-text h1 {
-    margin: 0;
-    font-size: 5rem;
-    font-weight: 400;
-    background: linear-gradient(90deg, #FFFFFF, #2C4E6B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    width: 1318px;
+/* Мелкие планшеты / телефоны */
+@media (max-width: 768px) {
+  .countries-text h1 {
+    font-size: 3rem;
+  }
+
+  .countries-text p {
+    font-size: 0.95rem;
+  }
+
+  .marquee-item img {
+    height: 50px;
+  }
+
+  .marquee-country {
+    font-size: 24px;
+  }
+
+  .countries-text {
+    margin-bottom: 60px;
+  }
+
+  .marquee-track {
+    gap: 1.2rem;
+  }
 }
 
-.countries-text p {
-    font-size: 1rem;
-    font-weight: 400;
-}
+/* Мобильные устройства */
+@media (max-width: 480px) {
+  .countries-container {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
 
-.flag {
-    width: 113px;
+  .countries-text h1 {
+    font-size: 2rem;
+  }
+
+  .countries-text p {
+    font-size: 0.9rem;
+  }
+
+  .marquee-item img {
+    height: 35px;
+  }
+
+  .marquee-country {
+    font-size: 18px;
+    padding: 0 0.5rem;
+  }
+
+  .marquee-track {
+    gap: 1rem;
+  }
 }
