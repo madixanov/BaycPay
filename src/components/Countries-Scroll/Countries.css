@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  min-height: 623px;
+  min-height: 300px;
   box-shadow: inset 0 50px 100px #080A28;
   box-sizing: border-box;
   overflow: hidden;
@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto 91px auto;
   padding: 0 1rem;
   box-sizing: border-box;
@@ -53,9 +53,7 @@
 /* Обертка для анимации */
 .marquee-wrapper {
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
-  overflow-y: visible;
   box-sizing: border-box;
   position: relative;
 }
@@ -65,11 +63,13 @@
   display: flex;
   gap: 2rem;
   will-change: transform;
-  min-width: 200%;
+  width: fit-content;
+  animation: marquee-scroll 40s linear infinite;
 }
 
 .marquee-track.reverse {
   flex-direction: row-reverse;
+  animation: marquee-scroll-reverse 40s linear infinite;
 }
 
 /* Флаг */
@@ -99,6 +99,25 @@
   color: #ffffff;
 }
 
+/* Анимация движения */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-scroll-reverse {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 /* ─────────────── Адаптив ─────────────── */
 
 /* Планшеты */
@@ -118,12 +137,17 @@
 
 /* Мелкие планшеты / телефоны */
 @media (max-width: 768px) {
+  .countries-container {
+    height: 400px;
+  }
+
   .countries-text h1 {
     font-size: 3rem;
   }
 
   .countries-text p {
     font-size: 0.95rem;
+    width: 365px;
   }
 
   .marquee-item img {

@@ -1,7 +1,8 @@
 .description-page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
 }
 
 .description-container {
@@ -10,10 +11,11 @@
   align-items: flex-start;
   gap: 13px;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
   padding: 2rem 1rem;
   box-sizing: border-box;
   margin: 0 auto;
+  max-width: 1200px; /* ✅ ограничение ширины на больших экранах */
 }
 
 .description-1 {
@@ -50,12 +52,13 @@
   max-width: 385px;
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 /* Бегущая строка */
 .scroll-text-wrapper {
   overflow: hidden;
-  width: 100%; /* 👉 на всю ширину экрана */
+  width: 100%;
   background: linear-gradient(140deg, #0049FF, #00C3FF);
   padding: 1rem 0;
   margin-top: 75px;
@@ -76,7 +79,7 @@
   min-width: 100%;
   animation: scroll-left 20s linear infinite;
   box-sizing: border-box;
-  padding-left: 100%; /* бесшовная прокрутка */
+  padding-left: 100%;
 }
 
 .scroll-content span {
@@ -95,18 +98,38 @@
   }
 }
 
-/* 📱 Планшеты и телефоны */
+/* ✅ Планшеты */
+@media (max-width: 1024px) {
+  .description-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .description-1 {
+    font-size: 1.5rem;
+  }
+
+  .description-2 {
+    font-size: 0.95rem;
+  }
+
+  .description-image {
+    width: 260px;
+  }
+}
+
+/* 📱 Телефоны */
 @media (max-width: 768px) {
   .description-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1.5rem;
+    padding: 2rem 1.2rem;
   }
 
   .description-1,
   .description-2 {
-    max-width: 90%;
+    width: 45%;
   }
 
   .description-1 {
@@ -114,7 +137,7 @@
   }
 
   .description-image {
-    width: 200px;
+    width: 220px;
   }
 
   .scroll-text-wrapper {
@@ -134,11 +157,15 @@
 
 @media (max-width: 480px) {
   .description-1 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .description-2 {
     font-size: 0.85rem;
+  }
+
+  .description-image {
+    width: 180px;
   }
 
   .scroll-text-wrapper {

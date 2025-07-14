@@ -2,6 +2,7 @@ import baycpayLogo from '../../assets/images/baycpay-logo.svg';
 import fbIcon from '../../assets/icons/fb-icon.svg';
 import tgIcon from '../../assets/icons/tg-icon.svg';
 import "./Footer.css";
+import scrollToId from '../../utils/ScrollToId';
 
 const Footer = () => {
     return (
@@ -12,18 +13,18 @@ const Footer = () => {
                         <img src={baycpayLogo} alt="BaycPay" className="footer-logo" />
                     </div>
                     <div className="footer-left">
-                        <p>Кто мы</p>
-                        <p>Платежные системы</p>
-                        <p>Преимущества</p>
+                        <p onClick={() => scrollToId("description")}>Кто мы</p>
+                        <p onClick={() => scrollToId("brands")}>Платежные системы</p>
+                        <p onClick={() => scrollToId("advantages")}>Преимущества</p>
                     </div>
                     <div className="footer-right">
-                        <p>С кем работаем</p>
-                        <p>Новости</p>
-                        <p>Отзывы</p>
+                        <p onClick={() => scrollToId("partners")}>С кем работаем</p>
+                        <p onClick={() => scrollToId("statistics")}>Новости</p>
+                        <p onClick={() => scrollToId("countries")}>Отзывы</p>
                     </div>
                 </div>
                 <div className='footer-button-row'>
-                    <button className="footer-contact-us-button">
+                    <button className="footer-contact-us-button" onClick={() => scrollToId("contact")}>
                         <span>Связаться с нами</span>
                     </button>
                     <button className='footer-tg-button'>

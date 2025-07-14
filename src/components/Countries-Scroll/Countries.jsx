@@ -7,10 +7,12 @@ import russia from "../../assets/flags/russia.svg";
 import sweden from "../../assets/flags/sweden.svg";
 import turkey from "../../assets/flags/turkey.svg";
 import uae from "../../assets/flags/uae.svg";
-import uruguay from "../../assets/flags/urugay.svg"; // Исправлено
-
+import urugay from "../../assets/flags/urugay.svg";
 import "./Countries.css";
-import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const flags = [
   china,
@@ -22,7 +24,7 @@ const flags = [
   sweden,
   turkey,
   uae,
-  uruguay,
+  urugay,
 ];
 
 const countryNames = [
@@ -38,48 +40,31 @@ const Countries = () => {
   return (
     <div className="countries-container">
       <div className="countries-text">
-        <h1>Мы объединяем мир</h1>
-        <p>
-          Наша цель — упростить глобальные онлайн-платежи, где бы вы ни находились.
-          <br />
+        <h1 data-aos="fade-up" data-aos-duration="1000">Мы объединяем мир</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Наша цель — упростить глобальные онлайн-платежи, где бы вы ни находились.<br />
           От США и Европы до Азии и Южной Америки. Мы работаем там, где другим сложно.
         </p>
       </div>
 
       <div className="marquee-wrapper">
-        <motion.div
-          className="marquee-track"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{
-            repeat: Infinity,
-            duration: 20,
-            ease: "linear",
-          }}
-        >
+        <div className="marquee-track">
           {[...flags, ...flags].map((flag, index) => (
             <div className="marquee-item" key={index}>
               <img src={flag} alt={`flag-${index}`} className="flag" />
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
 
       <div className="marquee-wrapper">
-        <motion.div
-          className="marquee-track reverse"
-          animate={{ x: ["0%", "100%"] }}
-          transition={{
-            repeat: Infinity,
-            duration: 20,
-            ease: "linear",
-          }}
-        >
+        <div className="marquee-track reverse">
           {[...countryNames, ...countryNames].map((name, index) => (
             <div className="marquee-country" key={index}>
               {name}
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </div>
   );

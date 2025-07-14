@@ -2,6 +2,7 @@ import "./Header.css";
 import baycpayLogo from "../../assets/images/baycpay-logo.svg";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import scrollToId from "../../utils/ScrollToId";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -26,9 +27,9 @@ const Header = () => {
                 </div>
 
                 <div className="header-nav-links header-left-links">
-                    <p>Кто мы</p>
-                    <p>Платежные системы</p>
-                    <p>Преимущества</p>
+                    <p onClick={() => scrollToId("description")}>Кто мы</p>
+                    <p onClick={() => scrollToId("brands")}>Платежные системы</p>
+                    <p onClick={() => scrollToId("advantages")}>Преимущества</p>
                 </div>
             </div>
 
@@ -37,10 +38,10 @@ const Header = () => {
             </div>
 
             <div className="header-nav-links header-right-links">
-                <p>С кем работаем</p>
-                <p>Новости</p>
-                <p>Отзывы</p>
-                <p>Контакты</p>
+                <p onClick={() => scrollToId("partners")}>С кем работаем</p>
+                <p onClick={() => scrollToId("statistics")}>Новости</p>
+                <p onClick={() => scrollToId("countries")}>Отзывы</p>
+                <p onClick={() => scrollToId("contact")}>Контакты</p>
             </div>
 
             <AnimatePresence>
@@ -52,13 +53,13 @@ const Header = () => {
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <p>Кто мы</p>
-                        <p>Платежнык системы</p>
-                        <p>Преимущества</p>
-                        <p>С кем работаем</p>
-                        <p>Новости</p>
-                        <p>Отзывы</p>
-                        <p>Контакты</p>
+                        <p onClick={() => scrollToId("description")}>Кто мы</p>
+                        <p onClick={() => scrollToId("brands")}>Платежные системы</p>
+                        <p onClick={() => scrollToId("advantages")}>Преимущества</p>
+                        <p onClick={() => scrollToId("partners")}>С кем работаем</p>
+                        <p onClick={() => scrollToId("statistics")}>Новости</p>
+                        <p onClick={() => scrollToId("countries")}>Отзывы</p>
+                        <p onClick={() => scrollToId("contact")}>Контакты</p>
                     </motion.div>
                 )}
             </AnimatePresence>

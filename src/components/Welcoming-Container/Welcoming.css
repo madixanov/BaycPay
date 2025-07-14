@@ -4,16 +4,17 @@
     align-items: center;
     justify-content: start;
 
-    width: 100%; /* 🔹 ширина на всю доступную область */
+    width: 100vw; /* 🔹 ширина на всю доступную область */
     height: 600px; /* 🔹 фиксированная высота */
 
     background-image: 
-        url('assets/setka.svg'),
-        url('assets/gradient-image.svg');
+        url('/assets/setka.svg'),
+        url('/assets/gradient-image.svg');
     background-repeat: no-repeat;
     background-size: cover; /* 🔹 картинка масштабируется */
     background-position: center; /* 🔹 центрируется */
     padding-top: 110px;
+    position: relative;
 }
 
 .welcoming-title {
