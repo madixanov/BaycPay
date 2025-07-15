@@ -27,7 +27,7 @@ const Advantages = () => {
             <div className="left-ads">
               <div className="l-ads-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <p>Инновации, адаптированные под бизнес</p>
-                <img src={bullet} alt="" />
+                <img src={bullet} alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"/>
               </div>
               <div className="l-ads-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                 <p>

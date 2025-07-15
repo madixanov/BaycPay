@@ -22,8 +22,8 @@ const Telegram = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="hero-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                        <img src={hero} alt="telegram-icon" />
+                    <div className="hero-container" >
+                        <img src={hero} alt="telegram-icon" loading="eager" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"/>
                     </div>
                 </div>
             </div>

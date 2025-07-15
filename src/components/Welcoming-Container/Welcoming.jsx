@@ -13,7 +13,7 @@ const Welcoming = () => {
                 <h1 className="welcoming-title" data-aos="fade-up" data-aos-duration="1000">Welcome to <span>BAYC-PAY</span></h1>
                 <div className="hero-div" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     <p>Ваш мост между бизнесом и миром финансовых решений</p>
-                    <img src={hero} alt="Hero Image" />
+                    <img src={hero} alt="Hero Image" loading="eager" />
                     <div>
                         <span>private limited company</span>
                     </div>
