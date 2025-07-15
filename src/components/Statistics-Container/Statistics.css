@@ -138,9 +138,16 @@
 }
 
 @media (max-width: 768px) {
+    .stats {
+        padding: 0;
+    }
+
     .statistics-container {
-        padding: 60px 1rem;
         gap: 40px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 1.5rem;
     }
 
     .statistics-container h1 {

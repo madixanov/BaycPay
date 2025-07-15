@@ -20,11 +20,11 @@ const HomeMain = () => {
       <div id="description"><Description /></div>
       <div id="statistics"><Statistics /></div>
       <div id="brands"><Partners /></div>
-      <div id="advantages"><Advantages /></div>
+      {/* <div id="advantages"><Advantages /></div>
       <div id="countries"><Countries /></div>
       <div id="partners"><Offer /></div>\
       <div id="contact"><ContactUs /></div>
-      <div id="telegram"><Telegram /></div>
+      <div id="telegram"><Telegram /></div> */}
     </main>
   );
 }
