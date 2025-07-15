@@ -42,6 +42,18 @@ html, body {
 @media (max-width: 960px) {
   .main-container {
     display: unset;
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container {
     width: 330px;
   }
 }

@@ -119,13 +119,13 @@
     }
 
     .stats {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
     .stats-container {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .stats-number {
