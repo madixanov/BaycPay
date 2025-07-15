@@ -53,13 +53,13 @@ const Header = () => {
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <p onClick={() => scrollToId("description")}>Кто мы</p>
-                        <p onClick={() => scrollToId("brands")}>Платежные системы</p>
-                        <p onClick={() => scrollToId("advantages")}>Преимущества</p>
-                        <p onClick={() => scrollToId("partners")}>С кем работаем</p>
-                        <p onClick={() => scrollToId("statistics")}>Новости</p>
-                        <p onClick={() => scrollToId("countries")}>Отзывы</p>
-                        <p onClick={() => scrollToId("contact")}>Контакты</p>
+                        <p onClick={() => {scrollToId("description"); setMenuOpen(false);}}>Кто мы</p>
+                        <p onClick={() => {scrollToId("brands"); setMenuOpen(false);}}>Платежные системы</p>
+                        <p onClick={() => {scrollToId("advantages"); setMenuOpen(false);}}>Преимущества</p>
+                        <p onClick={() => {scrollToId("partners"); setMenuOpen(false);}}>С кем работаем</p>
+                        <p onClick={() => {scrollToId("statistics"); setMenuOpen(false);}}>Новости</p>
+                        <p onClick={() => {scrollToId("countries"); setMenuOpen(false);}}>Отзывы</p>
+                        <p onClick={() => {scrollToId("contact"); setMenuOpen(false);}}>Контакты</p>
                     </motion.div>
                 )}
             </AnimatePresence>
