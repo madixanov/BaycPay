@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 96%;
+  width: 1285px;
   height: 450px;
   background: linear-gradient(230deg, #0049FF, #00C3FF);
   border: none;
@@ -97,6 +97,7 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
+  margin: 0;
 }
 
 .rules input[type="checkbox"]:checked {
@@ -116,6 +117,7 @@
 .rules p {
   font-size: 12px;
   font-weight: 400;
+  margin: 27px 0;
 }
 
 .rules a {
@@ -124,9 +126,9 @@
 
 
 /* ───── Планшеты и ниже (до 1200px) ───── */
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .contact-us-container {
-    width: 90%;
+    width: 850px;
     padding: 20px;
     height: auto;
   }
@@ -138,6 +140,11 @@
   .fields-row {
     flex-direction: column;
     align-items: center;
+    width: 483px;
+  }
+
+  .contact-btn {
+    margin-top: 20px;
   }
 
   .fields-row input {
@@ -146,9 +153,18 @@
   }
 }
 
+@media (max-width: 990px) {
+  .contact-us-container {
+    width: 800px;
+  }
+
+  .contact-btn {
+    width: 380px;
+  }
+}
 
 /* ───── Мобильные (до 768px) ───── */
-@media (max-width: 990px) {
+@media (max-width: 810px) {
   .contact-us-container {
     height: auto;
     padding: 20px 20px;
@@ -170,9 +186,14 @@
   .fields-row {
     gap: 16px;
     margin-bottom: 0;
+    align-items: center;
   }
 
   .fields-row input {
+    width: 380px;
+  }
+
+  .contact-btn {
     width: 380px;
   }
 
@@ -189,7 +210,7 @@
   }
 
   .contact-btn {
-    width: 100%;
+    width: 405px;
     padding: 18px 0;
   }
 }
@@ -197,6 +218,10 @@
 
 /* ───── Маленькие телефоны (до 480px) ───── */
 @media (max-width: 480px) {
+  .contact-us-container {
+    width: 330px;
+  }
+
   .contact-us-container h1 {
     font-size: 2rem;
   }
@@ -220,5 +245,6 @@
 
   .contact-btn {
     font-size: 0.95rem;
+    width: 290px;
   }
 }

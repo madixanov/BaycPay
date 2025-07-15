@@ -24,7 +24,7 @@ const HomeMain = () => {
       <div id="countries"><Countries /></div>
       <div id="partners"><Offer /></div>
       <div id="contact"><ContactUs /></div>
-      {/* <div id="telegram"><Telegram /></div> */}
+      <div id="telegram"><Telegram /></div>
     </main>
   );
 }

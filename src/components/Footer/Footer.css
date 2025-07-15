@@ -18,7 +18,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 323px;
+    gap: 310px;
     width: 100%;
 }
 
@@ -193,19 +193,22 @@ footer {
 }
 
 @media (max-width: 640px) {
+    .footer-links {
+        gap: 0;
+    }
+
     .footer {
         gap: 32px;
         padding-top: 16px;
     }
 
     .footer-contact-us-button {
-        width: 100%;
-        max-width: 250px;
+        width: 450px
     }
 
     .footer-tg-button,
     .footer-fb-button {
-        width: 2.5rem;
+        width: 450px;
         height: 2.5rem;
     }
 
