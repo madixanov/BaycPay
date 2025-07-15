@@ -111,31 +111,13 @@
   object-fit: cover;
 }
 
-
 @media (max-width: 1200px) {
-  .telegram-container {
-    padding: 80px 60px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-   .telegram-text {
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .telegram-text h1 {
-    font-size: 4rem;
-  }
-
-  .hero-container img {
-    width: 450px;
+  .telegram-icon {
+    width: 300px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .telegram-container {
     flex-direction: column;
     justify-content: center;
