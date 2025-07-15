@@ -159,6 +159,9 @@
 
 /* 🌐 Адаптация под планшеты и телефоны */
 @media (max-width: 1024px) {
+    .footer {
+        padding: 0;
+    }
     .footer-logo-container img {
         opacity: 0;
     }
@@ -166,6 +169,8 @@
     .main-footer {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 80%;;
         gap: 2rem;
     }
 

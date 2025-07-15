@@ -138,7 +138,7 @@
 /* Мелкие планшеты / телефоны */
 @media (max-width: 768px) {
   .countries-container {
-    height: 400px;
+    height: 100%;
   }
 
   .countries-text h1 {

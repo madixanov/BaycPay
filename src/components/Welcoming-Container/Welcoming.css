@@ -272,4 +272,11 @@
     font-size: 0.95rem;
     height: 54px;
   }
+
+  .welcoming-contact-us-container {
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 80%;
+  }
 }

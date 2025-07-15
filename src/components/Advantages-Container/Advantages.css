@@ -269,3 +269,30 @@
   }
 }
 
+@media (max-width: 768px) {
+  .advantages-container {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .advantages-container h1 {
+    width: 100%;
+    font-size: 1.7rem;
+    margin-top: 0;
+    line-height: 30px;
+  }
+
+  .advantages-container p {
+    align-self: flex-start;
+    text-align: start;
+  }
+
+  .ads-text {
+    margin-top: 0;
+  }
+
+  .left-ads {
+    margin-top: 15px;
+  }
+}
+

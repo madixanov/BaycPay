@@ -198,17 +198,32 @@ h3 {
     gap: 2rem;
   }
 
-  .upper-container,
+  .upper-container {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
   .down-sub-container {
     max-width: 100%;
     width: 100%;
     height: auto;
     padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .container-text-1 {
+    margin-top: 0;
   }
 
   .columns-row ul {
     max-width: 100%;
     flex: 1 1 45%;
+    margin-top: 10px;
   }
 
   .container-text {
