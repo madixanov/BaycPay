@@ -161,6 +161,24 @@ footer {
     color: white;
 }
 
+@media (max-width: 1500px) {
+    .main-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 850px;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+
+    .footer-logo {
+        width: 150px;
+    }
+}
+
 /* 🌐 Адаптация под планшеты и телефоны */
 @media (max-width: 1024px) {
     .footer {
@@ -197,18 +215,26 @@ footer {
         gap: 0;
     }
 
+    .footer-button-row {
+        flex-wrap: wrap;
+        width: 200px;
+    }
+
     .footer {
         gap: 32px;
         padding-top: 16px;
+        justify-content: center;
+        align-items: center;
     }
 
     .footer-contact-us-button {
-        width: 450px
+        width: 200px;
+        align-self: flex-start;
     }
 
     .footer-tg-button,
     .footer-fb-button {
-        width: 450px;
+        width: 200px;
         height: 2.5rem;
     }
 

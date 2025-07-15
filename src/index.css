@@ -12,6 +12,10 @@ body {
   width: 100vw;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 html, body {
   overflow-x: hidden;
 }
