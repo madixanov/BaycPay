@@ -1,18 +1,18 @@
 .welcoming-container {
+  width: 100vw;
+  background-image: 
+        url('/assets/setka.svg'),
+        url('/assets/gradient-image.svg');
+  background-repeat: no-repeat;
+  background-size: cover; /* 🔹 картинка масштабируется */
+  background-position: center;
+}
+.welcoming-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-
-    width: 100vw; /* 🔹 ширина на всю доступную область */
-    height: 600px; /* 🔹 фиксированная высота */
-
-    background-image: 
-        url('/assets/setka.svg'),
-        url('/assets/gradient-image.svg');
-    background-repeat: no-repeat;
-    background-size: cover; /* 🔹 картинка масштабируется */
-    background-position: center; /* 🔹 центрируется */
+    height: 600px; /* 🔹 фиксированная высота */ /* 🔹 центрируется */
     padding-top: 110px;
     position: relative;
 }
@@ -99,7 +99,7 @@
     align-items: center;
     gap: 12px;
     width: 732px;
-    height: 138px;
+    min-height: 138px;
     position: absolute;
     top: 560px;
     z-index: 2;
@@ -107,7 +107,8 @@
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1); /* 🔹 полупрозрачный фон */
     backdrop-filter: blur(10px);                /* 🔹 размытие фона */
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
 }
 
 .welcoming-contact-us-container::before {

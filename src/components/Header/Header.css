@@ -1,9 +1,12 @@
-.header {
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
+}
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,13 +15,13 @@
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-.header.transparent {
+header.transparent {
   background-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
 
-.header.scrolled {
+header.scrolled {
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -43,7 +46,7 @@
 }
 
 .header-nav-links p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.5);
     transition: color 0.3s ease-in-out;

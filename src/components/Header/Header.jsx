@@ -20,49 +20,53 @@ const Header = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className={`header ${scrolled ? "scrolled" : "transparent"}`}>
-            <div className="header-left">
-                <div className="header-burger" onClick={toggleMenu}>
-                    {menuOpen ? "✖" : "☰"}
+        <header className={`${scrolled ? "scrolled" : "transparent"}`}>
+            <div className="main-container">
+                <div className={`header`}>
+                    <div className="header-left">
+                        <div className="header-burger" onClick={toggleMenu}>
+                            {menuOpen ? "✖" : "☰"}
+                        </div>
+
+                        <div className="header-nav-links header-left-links">
+                            <p onClick={() => scrollToId("description")}>Кто мы</p>
+                            <p onClick={() => scrollToId("brands")}>Платежные системы</p>
+                            <p onClick={() => scrollToId("advantages")}>Преимущества</p>
+                        </div>
+                    </div>
+
+                    <div className="header-logo-container">
+                        <img src={baycpayLogo} alt="BAYCPAY" />
+                    </div>
+
+                    <div className="header-nav-links header-right-links">
+                        <p onClick={() => scrollToId("partners")}>С кем работаем</p>
+                        <p onClick={() => scrollToId("statistics")}>Новости</p>
+                        <p onClick={() => scrollToId("countries")}>Отзывы</p>
+                        <p onClick={() => scrollToId("contact")}>Контакты</p>
+                    </div>
+
+                    <AnimatePresence>
+                        {menuOpen && (
+                            <motion.div
+                                className="header-mobile-menu"
+                                initial={{ opacity: 0, y: -20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                exit={{ opacity: 0, y: -20 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <p onClick={() => {scrollToId("description"); setMenuOpen(false);}}>Кто мы</p>
+                                <p onClick={() => {scrollToId("brands"); setMenuOpen(false);}}>Платежные системы</p>
+                                <p onClick={() => {scrollToId("advantages"); setMenuOpen(false);}}>Преимущества</p>
+                                <p onClick={() => {scrollToId("partners"); setMenuOpen(false);}}>С кем работаем</p>
+                                <p onClick={() => {scrollToId("statistics"); setMenuOpen(false);}}>Новости</p>
+                                <p onClick={() => {scrollToId("countries"); setMenuOpen(false);}}>Отзывы</p>
+                                <p onClick={() => {scrollToId("contact"); setMenuOpen(false);}}>Контакты</p>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
-
-                <div className="header-nav-links header-left-links">
-                    <p onClick={() => scrollToId("description")}>Кто мы</p>
-                    <p onClick={() => scrollToId("brands")}>Платежные системы</p>
-                    <p onClick={() => scrollToId("advantages")}>Преимущества</p>
-                </div>
             </div>
-
-            <div className="header-logo-container">
-                <img src={baycpayLogo} alt="BAYCPAY" />
-            </div>
-
-            <div className="header-nav-links header-right-links">
-                <p onClick={() => scrollToId("partners")}>С кем работаем</p>
-                <p onClick={() => scrollToId("statistics")}>Новости</p>
-                <p onClick={() => scrollToId("countries")}>Отзывы</p>
-                <p onClick={() => scrollToId("contact")}>Контакты</p>
-            </div>
-
-            <AnimatePresence>
-                {menuOpen && (
-                    <motion.div
-                        className="header-mobile-menu"
-                        initial={{ opacity: 0, y: -20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.3 }}
-                    >
-                        <p onClick={() => {scrollToId("description"); setMenuOpen(false);}}>Кто мы</p>
-                        <p onClick={() => {scrollToId("brands"); setMenuOpen(false);}}>Платежные системы</p>
-                        <p onClick={() => {scrollToId("advantages"); setMenuOpen(false);}}>Преимущества</p>
-                        <p onClick={() => {scrollToId("partners"); setMenuOpen(false);}}>С кем работаем</p>
-                        <p onClick={() => {scrollToId("statistics"); setMenuOpen(false);}}>Новости</p>
-                        <p onClick={() => {scrollToId("countries"); setMenuOpen(false);}}>Отзывы</p>
-                        <p onClick={() => {scrollToId("contact"); setMenuOpen(false);}}>Контакты</p>
-                    </motion.div>
-                )}
-            </AnimatePresence>
         </header>
     );
 };
