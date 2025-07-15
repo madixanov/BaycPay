@@ -24,4 +24,23 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 1500px) {
+  .main-container {
+    max-width: 981px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    max-width: 869px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main-container {
+    display: unset;
+  }
 }

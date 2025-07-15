@@ -15,7 +15,6 @@
     height: 600px; /* 🔹 фиксированная высота */ /* 🔹 центрируется */
     padding-top: 110px;
     position: relative;
-    padding-bottom: 50px;
 }
 
 .welcoming-title {
@@ -48,6 +47,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    gap: 230px;
 }
 
 .hero-div p {
@@ -109,7 +109,8 @@
     background-color: rgba(255, 255, 255, 0.1); /* 🔹 полупрозрачный фон */
     backdrop-filter: blur(10px);                /* 🔹 размытие фона */
     -webkit-backdrop-filter: blur(10px);
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .welcoming-contact-us-container::before {
@@ -174,6 +175,16 @@
   transform: scale(1.02);
 }
 
+@media (max-width: 1500px) {
+  .welcoming-title {
+    font-size: 80px;
+  }
+
+  .hero-div {
+    gap: 210px;
+  }
+}
+
 @media (max-width: 1200px) {
   .welcoming-title {
     font-size: 80px;
@@ -181,6 +192,10 @@
 
   .welcoming-title span {
     font-size: 4rem;
+  }
+
+  .hero-div {
+    gap: 200px;
   }
 
   .hero-div img {
@@ -201,9 +216,16 @@
 }
 
 @media (max-width: 768px) {
+  .hero-div div {
+    width: 80%;
+  }
+
   .welcoming-container {
     height: auto;
-    padding-top: 80px;
+  }
+
+  .welcoming-content {
+    padding-top: 70px;
   }
 
   .welcoming-title {
@@ -235,7 +257,7 @@
 
   .hero-div div {
     transform: translateX(0);
-    width: 90%;
+    width: 86%;
     height: auto;
     padding: 12px;
   }
@@ -245,6 +267,7 @@
     flex-direction: column;
     padding: 20px;
     margin-top: 40px;
+    width: 83%;
   }
 
   .welcoming-contact-us-btn {
@@ -254,31 +277,5 @@
 
   .welcoming-contact-us-text {
     text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .welcoming-title {
-    font-size: 2.2rem;
-  }
-
-  .welcoming-title span {
-    font-size: 2rem;
-  }
-
-  .welcoming-contact-us-text {
-    font-size: 0.9rem;
-  }
-
-  .welcoming-contact-us-btn {
-    font-size: 0.95rem;
-    height: 54px;
-  }
-
-  .welcoming-contact-us-container {
-    height: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 80%;
   }
 }

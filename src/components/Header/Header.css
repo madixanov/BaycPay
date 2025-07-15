@@ -32,6 +32,9 @@ header.scrolled {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-logo-container img {
@@ -95,6 +98,10 @@ header.scrolled {
     .header-nav-links {
         gap: 1rem;
     }
+
+    .header-nav-links p {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -118,6 +125,7 @@ header.scrolled {
 @media (max-width: 960px) {
     .header {
         justify-content: space-between;
+        padding-left: 15px;
     }
     .header-logo-container img {
         height: 25px;
