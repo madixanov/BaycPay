@@ -42,5 +42,6 @@ html, body {
 @media (max-width: 960px) {
   .main-container {
     display: unset;
+    width: 330px;
   }
 }

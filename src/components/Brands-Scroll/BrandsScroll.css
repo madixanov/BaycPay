@@ -47,9 +47,14 @@
 
 /* Маленькие планшеты и телефоны — 3 логотипа */
 @media (max-width: 768px) {
+  .brands-scroll-container {
+    padding-top: 0;
+  }
+
   .brand-logo {
     flex: 0 0 6%; /* 3 логотипа */
     padding: 0 1rem;
+    padding-top: 0;
   }
 
   .brand-logo img {

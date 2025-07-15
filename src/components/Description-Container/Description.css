@@ -103,11 +103,12 @@
 
 
   .description-container {
-    padding: 2rem 1.5rem;
+    padding: 2rem 0;
   }
 
   .description-1 {
     font-size: 2rem;
+    max-width: unset;
     width: 100%;
   }
 
@@ -131,7 +132,7 @@
 
   .description-1,
   .description-2 {
-    width: 80%;
+    width: 100%;
   }
 
   .description-1 {
