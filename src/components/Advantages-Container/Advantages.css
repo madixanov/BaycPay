@@ -151,7 +151,7 @@
 }
 
 .l-ads-2 {
-  left: 135px;
+  left: 155px;
   bottom: 50px;
 }
 
@@ -161,7 +161,7 @@
 }
 
 .ads-r2 {
-  right: 135px;
+  right: 153px;
   bottom: 70px;
 }
 
@@ -177,6 +177,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  width: 629px;
 }
 
 .l-ads-1 p span,
@@ -186,9 +187,46 @@
   display: block;
   margin-top: 0.5rem;
   font-size: 12px;
-  color: white;
+  -webkit-text-fill-color: #526470;
   color: #526470;
+  line-height: 1;
   font-weight: 400;
+}
+
+@media (max-width: 1500px) {
+  .l-ads-1 {
+    left: 13px;
+  }
+
+  .l-ads-2 {
+    left: 43px;
+  }
+
+  .ads-r1 {
+    right: 13px;
+  }
+
+  .ads-r2 {
+    right: 43px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .l-ads-1 {
+    left: -40px;
+  }
+
+  .l-ads-2 {
+    left: -15px;
+  }
+
+  .ads-r1 {
+    right: -40px;
+  }
+
+  .ads-r2 {
+    right: -13px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -200,13 +238,20 @@
     display: none;
   }
 
+  .l-ads-1 p,
+  .l-ads-2 p {
+    text-align: right;
+    font-size: 20px;
+  }
+
   .advantages-container h1, 
   .advantages-container h2 {
     font-size: 2.5rem;
     line-height: 3.5rem;
-    width: 90%;
+    width: 100%;
     text-align: center;
     padding-left: 0;
+    line-height: 1;
   }
 
   .ads-text {
@@ -215,7 +260,7 @@
     text-align: center;
     width: 90%;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 0;
   }
 
   .ads-text h1 {
@@ -227,7 +272,9 @@
   .ads-text p {
     font-size: 1rem;
     width: 100%;
-    line-height: 1.5rem;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 50px;
   }
 
   .left-ads,
@@ -261,8 +308,6 @@
     margin: 0;
   }
 
-  .l-ads-1 p,
-  .l-ads-2 p,
   .ads-r1 p,
   .ads-r2 p {
     font-size: 20px;
