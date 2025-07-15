@@ -127,11 +127,15 @@
   }
 
   .marquee-item img {
-    height: 65px;
+    height: 45px;
   }
 
   .marquee-country {
-    font-size: 30px;
+    font-size: 25px;
+  }
+
+  .countries-text {
+    margin-bottom: 15px;
   }
 }
 
@@ -139,6 +143,10 @@
 @media (max-width: 768px) {
   .countries-container {
     height: 100%;
+  }
+
+  .countries-text {
+    margin-bottom: 10px;
   }
 
   .countries-text h1 {
@@ -151,15 +159,11 @@
   }
 
   .marquee-item img {
-    height: 50px;
+    height: 35px;
   }
 
   .marquee-country {
-    font-size: 24px;
-  }
-
-  .countries-text {
-    margin-bottom: 60px;
+    font-size: 18px;
   }
 
   .marquee-track {
@@ -174,6 +178,10 @@
     gap: 1.5rem;
   }
 
+  .countries-text {
+    margin-bottom: 10px;
+  }
+
   .countries-text h1 {
     font-size: 2rem;
   }
@@ -183,11 +191,11 @@
   }
 
   .marquee-item img {
-    height: 35px;
+    height: 25px;
   }
 
   .marquee-country {
-    font-size: 18px;
+    font-size: 12px;
     padding: 0 0.5rem;
   }
 
