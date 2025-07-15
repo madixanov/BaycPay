@@ -182,10 +182,6 @@ h3 {
   justify-content: center;
 }
 
-@media (max-width: 1500px) {
-  
-}
-
 /* ───── Планшеты (до 1200px) ───── */
 @media (max-width: 1500px) {
   .offer-container {
@@ -205,7 +201,7 @@ h3 {
   }
 
   .left-main-container {
-    max-width: 850px;
+    width: 850px;
     height: 100%;
     justify-content: start;
   }
@@ -252,8 +248,95 @@ h3 {
   }
 }
 
+@media (max-width: 990px) {
+  .left-main-container {
+    width: 800px;
+    height: 100%;
+    justify-content: start;
+  }
+
+  .upper-container {
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .down-sub-container {
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+}
+
 /* ───── Мобильные (до 768px) ───── */
 @media (max-width: 768px) {
+  .offer-container {
+    padding: 0;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .offer-container h1 {
+    font-size: 4rem;
+  }
+
+  .container-grid {
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .left-main-container {
+    width: 450px;
+    height: 100%;
+    justify-content: start;
+  }
+
+  .left-main-container p {
+    width: 100%;
+  }
+
+  .upper-sub-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .upper-container {
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .down-sub-container {
+    width: 450px;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .container-text-1 {
+    margin-top: 0;
+  }
+
+  .columns-row ul {
+    max-width: 100%;
+    flex: 1 1 45%;
+    margin-top: 10px;
+  }
+
+  .container-text {
+    width: 100%;
+  }
   .offer-container h1 {
     font-size: 3rem;
   }
@@ -294,5 +377,27 @@ h3 {
   .columns-row ul {
     width: 100%;
     flex: 1 1 auto;
+  }
+
+  .upper-container {
+    width: 330px;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .down-sub-container {
+    width: 330px;
+    height: auto;
+    padding: 20px;
+    justify-content: start;
+    gap: 40px;
+  }
+
+  .left-main-container {
+    width: 330px;
+    height: 100%;
+    justify-content: start;
   }
 }
