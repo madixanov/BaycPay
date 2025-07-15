@@ -12,9 +12,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: 600px; /* 🔹 фиксированная высота */ /* 🔹 центрируется */
+    min-height: 600px; /* 🔹 фиксированная высота */ /* 🔹 центрируется */
     padding-top: 110px;
     position: relative;
+    padding-bottom: 50px;
 }
 
 .welcoming-title {
