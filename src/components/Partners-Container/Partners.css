@@ -1,12 +1,17 @@
+.partners-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
 .partners-container {
   display: flex;
   flex-direction: column;
   gap: 80px;
   justify-content: center;
   align-items: center;
-  margin: 100px auto; /* 🔹 отступы сверху и снизу */
-  padding: 0 2rem;     /* 🔹 боковые отступы на всех экранах */
-  max-width: 1200px;
+  margin: 100px auto; /* 🔹 отступы сверху и снизу */     /* 🔹 боковые отступы на всех экранах */
 }
 
 .partners-container h1 {
@@ -33,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 50px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -43,8 +48,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 26px;
-  width: 363px;
+  gap: 36px;
+  width: 390px;
   height: 214px;
   border: 1px solid rgba(255,255,255,0.24);
   border-radius: 20px;

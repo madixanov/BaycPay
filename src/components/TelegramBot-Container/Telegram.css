@@ -1,8 +1,4 @@
-.telegram-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100vw;
+.telegram-page {
   background-image:
     linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
     url("assets/setka.svg"),
@@ -10,10 +6,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: inset 0 50px 100px #080A28;
+}
+
+.telegram-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
   padding: 100px 0;
   box-sizing: border-box;
   overflow: hidden;
+  gap: 75px;
 }
 
 /* 🔹 Обёртка для центрирования контента */

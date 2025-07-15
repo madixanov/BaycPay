@@ -1,10 +1,15 @@
+.offer-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;;
+}
+
 .offer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
   padding: 0 1rem 1rem 1rem;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -27,8 +32,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 20px;
   width: 100%;
+  max-width: 1320px;
   overflow-y: hidden;
   overflow-x: hidden;
   min-height: 800px;
@@ -36,7 +42,7 @@
 
 .left-main-container {
   width: 100%;
-  max-width: 363px;
+  width: 343px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,11 +51,12 @@
   gap: 35px;
   border: 1px solid rgba(0, 153, 255, 0.2);
   border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
-  height: 511px;
+  height: 600px;
 }
 
 .left-main-container:hover {
@@ -59,22 +66,26 @@
 .right-main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 35px;
-  width: 100%;
+  width: 900px;
 }
 
 .upper-sub-container {
   display: flex;
   gap: 36px;
-  width: 100%;
+  width: 98%;
+  justify-content: space-between;
 }
 
 .upper-container {
   width: 100%;
-  max-width: 363px;
+  max-width: 440px;
   padding: 24px;
   border: 1px solid rgba(0, 153, 255, 0.2);
   border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease-in-out;
@@ -83,7 +94,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: auto;
+  height: 282px;
 }
 
 .upper-container:hover,
@@ -96,15 +107,16 @@
   flex-direction: column;
   gap: 27px;
   align-items: flex-start;
-  width: 762px;
+  width: 98%;
   padding: 24px;
   border: 1px solid rgba(0, 153, 255, 0.2);
   border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
-  height: 238px;
+  height: 282px;
 }
 
 .container-text {

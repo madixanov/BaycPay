@@ -1,9 +1,4 @@
-.statistics-container {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    justify-content: start;
-    padding-top: 50px;
+.statistics-page {
     align-items: center;
     background-image: 
         linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
@@ -11,10 +6,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    box-shadow: inset 0 50px 100px #080A28; /* 🔧 исправлено с 100wv */
+}
+
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: start;
+    padding-top: 50px;
     height: 100%;
-    box-shadow: inset 0 50px 100px #080A28;
-    width: 100vw; /* 🔧 исправлено с 100wv */
     box-sizing: border-box;
+    padding-bottom: 50px;
 }
 
 .statistics-container h1 {
@@ -33,8 +40,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 35px;
-    max-width: 1200px;
+    gap: 40px;
+    max-width: 1320px;
     margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
@@ -43,7 +50,7 @@
 
 .stats-container {
     position: relative;
-    width: 363px;
+    width: 395px;
     height: 178px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
