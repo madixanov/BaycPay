@@ -280,3 +280,14 @@
     text-align: center;
   }
 }
+
+@media (max-width: 500px) {
+  .welcoming-container {
+    height: auto;
+    padding-bottom: 190px;
+  }
+
+  .welcoming-contact-us-cont1 {
+    scale: 0.8;
+  }
+}
