@@ -1,8 +1,7 @@
 .telegram-container {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100vw;
   background-image:
     linear-gradient(to bottom, #080A28 0%, rgba(8,10,40,0.8) 5%, transparent 40%),
@@ -12,10 +11,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 50px 100px #080A28;
-  padding: 100px 120px;
-  flex-wrap: wrap;
+  padding: 100px 0;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+/* 🔹 Обёртка для центрирования контента */
+.telegram-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 120px;
+  box-sizing: border-box;
 }
 
 .telegram-text {
@@ -110,32 +120,30 @@
   object-fit: cover;
 }
 
+/* ─────────────── Адаптив ─────────────── */
+
 @media (max-width: 1300px) {
-  .telegram-container {
-    padding: 20px 50px;
+  .telegram-content {
+    padding: 0 50px;
   }
+
   .hero-container img {
     width: 500px;
   }
 }
 
 @media (max-width: 1024px) {
-  .telegram-container {
+  .telegram-content {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+    justify-content: start;
+    align-items: flex-start;
     gap: 40px;
-  }
-
-  .telegram-text {
-    align-items: center;
-    justify-content: center;
+    padding: 0 40px;
   }
 
   .telegram-text h1 {
     font-size: 3rem;
+    width: 100%;
   }
 
   .telegram-btn {
@@ -151,7 +159,18 @@
 
 @media (max-width: 576px) {
   .telegram-container {
-    padding: 50px 20px;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .telegram-content {
+    padding: 0 20px;
+  }
+
+  .telegram-text {
+    align-items: center;
+    text-align: center;
   }
 
   .telegram-text h1 {
