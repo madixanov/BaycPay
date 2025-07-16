@@ -33,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
   width: 100%;
   max-width: 1320px;
   overflow-y: hidden;
@@ -42,13 +42,13 @@
 }
 
 .left-main-container {
-  min-width: 343px;
+  min-width: 330px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 24px;
+  padding: 20px;
   gap: 35px;
   border: 1px solid rgba(0, 153, 255, 0.2);
   border-radius: 20px;
@@ -359,7 +359,7 @@ h3 {
 }
 
 /* ───── Маленькие телефоны (до 480px) ───── */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .offer-container h1 {
     font-size: 2.2rem;
   }
@@ -398,8 +398,14 @@ h3 {
   }
 
   .left-main-container {
-    width: 330px;
-    height: 100%;
+    max-width: 330px;
+    height: auto;
     justify-content: start;
+    padding: 20px;
   }
+
+  .container-text {
+    width: 280px;;
+  }
+
 }
